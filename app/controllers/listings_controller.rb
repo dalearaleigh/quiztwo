@@ -9,7 +9,7 @@ class ListingsController < ApplicationController
   end 
 
   def create 
-    Listing.create(listing_params)
+    @Listing.create(listing_params)
     redirect_to root_path 
   end 
 
