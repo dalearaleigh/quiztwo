@@ -2,7 +2,7 @@
 <div class="booyah-box col-10 offset-1">
   <h1 style="font-family:Georgia;"> List Your Home </h1>
     <br /> 
-    <%= simple_form_for @listing do |f| %>
+    <%= simple_form_for @listing, url: new_listing_path do |f| %>
       <%= f.input :address %>
       <%= f.input :description %> 
       <%= f.input :price %>
