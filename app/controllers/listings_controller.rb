@@ -9,14 +9,8 @@ class ListingsController < ApplicationController
   end 
 
   def create 
-    Listing.create(listing_params)
+    Listing.create
     redirect_to root_path 
-  end 
-
-  private 
-
-  def listing_params
-    params.require(:address).permit(:address, :description, :price)
   end 
 
 end
