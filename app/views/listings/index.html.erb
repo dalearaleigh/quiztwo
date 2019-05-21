@@ -1,1 +1,9 @@
-<h1> Nashville Homes for Sale </h1>
+<% @listings.each do |listing| %>
+  <div> 
+    <h1><%= listing.address %></h1><br />
+    <i><%= listing.description %></i><br /> 
+    <p><%= listing.price %></p><br />
+  </div>
+
+  <hr />
+  <% end %>
